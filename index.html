@@ -1,37 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Student Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suyash Jaiswal | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<header>
-<h1>Student Portfolio</h1>
-<p>Computer Science and Engineering Student</p>
-</header>
-<section class="about">
-<h2>About Me</h2>
-<p>Hello! I am a third year Computer Engineering student passionate about web development.</p>
-</section>
-<section class="skills">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>PHP</li>
-</ul>
-</section>
-<section class="projects">
-<h2>Projects</h2>
-<p>Student Portfolio Management System</p>
-</section>
-<section class="contact">
-<h2>Contact</h2n <p>Email: suyash.jaiswal@mitwpu.edu.in</p>
-</section>
-<footer>
-<p>© 2026 Student Portfolio</p>
-</footer>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div>
+          <h1>Suyash</h1>
+          <p class="subtitle">Computer Science / Computer Engineering Student</p>
+        </div>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <h2>Building practical projects in Networking, C++ and AI.</h2>
+        <p>
+          I like hands-on learning and challenging viva-style questions. I’m currently exploring
+          web development, networking labs, and AI-focused capstone ideas.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Web Dev</span>
+          <span class="chip">Cisco Packet Tracer</span>
+          <span class="chip">C++</span>
+          <span class="chip">AI / ML</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container grid two">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>
+            Hi! I’m <strong>Suyash</strong> — a Computer Science / Computer Engineering student who enjoys
+            solving real problems through projects. I’m comfortable switching between
+            coding, debugging, and building systems step-by-step.
+          </p>
+          <p>
+            Recent work includes network configuration labs (like Static NAT setups in Cisco Packet Tracer),
+            a C++ file-based student record system using a hash table, and exploring AI ideas
+            like mental-health risk detection from text.
+          </p>
+        </div>
+
+        <div class="card highlights">
+          <h3>Highlights</h3>
+          <ul class="bullets">
+            <li>Likes challenging questions for viva preparation</li>
+            <li>Practical networking labs (routing + NAT)</li>
+            <li>Strong interest in capstone-level projects</li>
+            <li>Comfortable with both frontend and backend basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="grid three">
+          <div class="card">
+            <h3>Web</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>C++</li>
+              <li>DSA (Hashing)</li>
+              <li>File Handling</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Networking / AI</h3>
+            <ul class="tags">
+              <li>Cisco Packet Tracer</li>
+              <li>Static NAT</li>
+              <li>AI Project Research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid two">
+          <article class="card project">
+            <div class="project-head">
+              <h3>Static NAT Lab (Cisco Packet Tracer)</h3>
+              <span class="badge">Networking</span>
+            </div>
+            <p>
+              Configured Static NAT in a Packet Tracer topology including PCs, routers, switches, and servers.
+              Focused on correct addressing, routing, and NAT translations.
+            </p>
+            <ul class="meta">
+              <li><strong>Tools:</strong> Cisco Packet Tracer</li>
+              <li><strong>Focus:</strong> NAT, routing, connectivity verification</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>C++ Hash Table Student Records</h3>
+              <span class="badge">C++</span>
+            </div>
+            <p>
+              Built a simple hash table system with file-based record management to create, modify,
+              and display student data efficiently.
+            </p>
+            <ul class="meta">
+              <li><strong>Core:</strong> hashing + file handling</li>
+              <li><strong>Features:</strong> create / modify / display</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>AI-Based Mental Health Risk Detection (Idea / Capstone)</h3>
+              <span class="badge">AI</span>
+            </div>
+            <p>
+              Exploring dataset-driven approaches to classify mental health-related text signals.
+              Goal: build a responsible pipeline for detection + analysis.
+            </p>
+            <ul class="meta">
+              <li><strong>Domain:</strong> NLP / Text classification</li>
+              <li><strong>Next:</strong> dataset selection + model baselines</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>Student Portfolio Website</h3>
+              <span class="badge">Web</span>
+            </div>
+            <p>
+              A simple portfolio site to showcase skills and projects, hosted via GitHub Pages.
+              Clean layout, responsive design, easy to extend.
+            </p>
+            <ul class="meta">
+              <li><strong>Stack:</strong> HTML + CSS</li>
+              <li><strong>Hosting:</strong> GitHub Pages</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>If you want to collaborate on a project or discuss a capstone idea, feel free to reach out.</p>
+
+          <div class="contact-row">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <a href="mailto:suyash.jaiswal@mitwpu.edu.in">suyash.jaiswal@mitwpu.edu.in</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick Message Template</h3>
+          <p class="small">
+            “Hi Suyash, I saw your portfolio. I’d like to connect about ________. Are you available this week?”
+          </p>
+
+          <div class="divider"></div>
+
+          <h3>What I’m Open To</h3>
+          <ul class="bullets">
+            <li>Capstone projects with teammates</li>
+            <li>Web + backend mini-projects</li>
+            <li>AI/NLP research-style builds (with datasets)</li>
+            <li>Networking lab practice & troubleshooting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© 2026 Suyash • Student Portfolio</p>
+      <p class="small">Built with HTML & CSS</p>
+    </div>
+  </footer>
 </body>
 </html>
