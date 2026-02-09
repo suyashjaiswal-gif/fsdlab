@@ -3,46 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Web Calculator</title>
+  <title>Neumorphic Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <section class="calculator" aria-label="Calculator">
-      <div class="display" aria-live="polite">
-        <div class="prev" id="prevDisplay"> </div>
-        <div class="curr" id="currDisplay">0</div>
+  <main class="stage">
+    <section class="phone" aria-label="Calculator">
+      <div class="screen" aria-live="polite">
+        <div class="screen-prev" id="prevDisplay"></div>
+        <div class="screen-curr" id="currDisplay">0</div>
       </div>
 
-      <div class="keys">
-        <button class="btn wide danger" data-action="clear">C</button>
-        <button class="btn" data-action="delete">DEL</button>
-        <button class="btn op" data-op="÷">÷</button>
+      <div class="pad keys">
+        <!-- row 1 -->
+        <button class="key key-fn" data-action="clear">CE</button>
+        <button class="key" data-num="0">0</button>
+        <button class="key key-accent" data-action="equals">=</button>
+        <button class="key key-op" data-op="÷">÷</button>
 
-        <button class="btn" data-num="7">7</button>
-        <button class="btn" data-num="8">8</button>
-        <button class="btn" data-num="9">9</button>
-        <button class="btn op" data-op="×">×</button>
+        <!-- row 2 -->
+        <button class="key" data-num="1">1</button>
+        <button class="key" data-num="2">2</button>
+        <button class="key" data-num="3">3</button>
+        <button class="key key-op" data-op="+">+</button>
 
-        <button class="btn" data-num="4">4</button>
-        <button class="btn" data-num="5">5</button>
-        <button class="btn" data-num="6">6</button>
-        <button class="btn op" data-op="-">-</button>
+        <!-- row 3 -->
+        <button class="key" data-num="4">4</button>
+        <button class="key" data-num="5">5</button>
+        <button class="key" data-num="6">6</button>
+        <button class="key key-op" data-op="-">−</button>
 
-        <button class="btn" data-num="1">1</button>
-        <button class="btn" data-num="2">2</button>
-        <button class="btn" data-num="3">3</button>
-        <button class="btn op" data-op="+">+</button>
+        <!-- row 4 -->
+        <button class="key" data-num="7">7</button>
+        <button class="key" data-num="8">8</button>
+        <button class="key" data-num="9">9</button>
+        <button class="key key-op" data-op="×">×</button>
 
-        <button class="btn wide" data-num="0">0</button>
-        <button class="btn" data-action="dot">.</button>
-        <button class="btn eq" data-action="equals">=</button>
+        <!-- small utility row (optional) -->
+        <button class="key key-sub" data-action="delete">DEL</button>
+        <button class="key key-sub" data-action="dot">.</button>
+        <button class="key key-sub" data-action="noop" disabled style="opacity:.45; cursor:not-allowed;"> </button>
+        <button class="key key-sub" data-action="noop" disabled style="opacity:.45; cursor:not-allowed;"> </button>
       </div>
     </section>
-
-    <p class="hint">
-      Keyboard: 0–9, + - * /, Enter (=), Backspace (DEL), Esc (C)
-    </p>
   </main>
 
   <script src="script.js"></script>
