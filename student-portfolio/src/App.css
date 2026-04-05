@@ -1,0 +1,194 @@
+/* FONT + RESET */
+/* FULL-WIDTH BACKGROUND (fixes right gap) */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #0f0c29, #090617 70%);
+  color: #e0d9ff;
+  overflow-x: hidden;
+}
+
+/* CENTERED CONTENT */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  position: relative;
+}
+
+
+/* BACKGROUND BLOBS */
+.bg-blob {
+  position: fixed;   /* KEY FIX */
+  width: 400px;
+  height: 400px;
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+}
+.blob1 {
+  background: #7c3aed; /* violet */
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  background: #c084fc; /* lavender glow */
+  bottom: -100px;
+  right: -100px;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  background: linear-gradient(90deg, #c084fc, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero {
+  text-align: center;
+  margin-top: 120px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Magnetic wrapper */
+.magnetic {
+  display: inline-block;
+}
+
+/* 3D card */
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+}
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #c4b5fd;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.3;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #b5a8ff;
+}
+
+/* ICONS */
+.icons {
+  margin-top: 25px;
+  font-size: 1.8rem;
+}
+
+.icons svg {
+  margin: 0 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icons svg:hover {
+  color: #c084fc;
+  transform: scale(1.2);
+}
+
+/* PROJECTS */
+.projects {
+  margin-top: 140px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(192, 132, 252, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 0 40px rgba(192, 132, 252, 0.6);
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.contact p {
+  color: #c4b5fd;
+}
+
+.section {
+  margin-top: 120px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(192, 132, 252, 0.15);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+/* TEXT */
+.section p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #c4b5fd;
+  line-height: 1.6;
+}
