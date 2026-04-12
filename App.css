@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0f0f0f;
+  color: #f0ede6;
+  min-height: 100vh;
+}
+
+.shell { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+.hero {
+  display: flex; align-items: baseline; gap: 12px;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 1.5rem;
+}
+
+h1 { font-family: 'DM Serif Display', serif; font-size: 2rem; font-weight: 400; }
+
+.tag {
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: #888; border: 1px solid #333; padding: 3px 10px; border-radius: 20px;
+}
+
+.card {
+  background: #181818; border: 1px solid #252525;
+  border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: #666; margin-bottom: 1.25rem;
+}
+
+.row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+
+.input-wrap { display: flex; flex-direction: column; gap: 5px; }
+
+label { font-size: 12px; color: #666; }
+
+input {
+  background: #111; border: 1px solid #2a2a2a;
+  border-radius: 8px; padding: 9px 12px;
+  color: #f0ede6; font-family: inherit; font-size: 14px;
+  outline: none; transition: border .15s;
+}
+input:focus { border-color: #c8a96e; }
+
+.btn {
+  background: #c8a96e; color: #0f0f0f; border: none;
+  border-radius: 8px; padding: 10px 22px;
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  cursor: pointer;
+}
+
+.student-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 0; border-bottom: 1px solid #1e1e1e;
+}
+.student-row:last-child { border-bottom: none; }
+
+.avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #1e1e1e; display: flex; align-items: center;
+  justify-content: center; font-size: 13px; font-weight: 500;
+  color: #c8a96e; flex-shrink: 0;
+}
+
+.student-name { font-size: 14px; font-weight: 500; }
+.student-meta { font-size: 12px; color: #666; margin-top: 2px; }
+
+.badge {
+  font-size: 11px; background: #1a1a1a;
+  border: 1px solid #2a2a2a; color: #888;
+  padding: 3px 10px; border-radius: 20px;
+}
+
+.del-btn {
+  background: none; border: none; cursor: pointer;
+  color: #444; font-size: 12px; padding: 5px 8px;
+  border-radius: 6px; font-family: inherit;
+}
+.del-btn:hover { color: #c0604a; background: #1e1010; }
+
+.empty { color: #444; font-size: 13px; padding: 1rem 0; }
